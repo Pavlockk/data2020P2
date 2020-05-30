@@ -1,4 +1,4 @@
-<h1> <b> Project Report - Group 3 ETL Project </b></h1>
+<h1><b> Project Report - Group 3 ETL Project </b></h1>
  
 At the end of the week, your team will submit a Final Report that describes the following:
  
