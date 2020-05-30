@@ -1,8 +1,8 @@
- Project Report - Group 3 ETL Project
+<h1><b> Project Report - Group 3 ETL Project </b></h1>
  
 At the end of the week, your team will submit a Final Report that describes the following:
  
-Extract: your original data sources and how the data was formatted (CSV, JSON, pgAdmin 4, etc).
+<h3> Extract </h3>
 
 When brainstorming where our group wanted to source datasets for our project, we identified Kaggle as the best option to explore. After exploring what resources Kaggle had to offer and briefly discussing what we wanted to do, we opted to look into what type of datasets were available on movies. 
 
@@ -15,7 +15,7 @@ IMDB_movies.csv
 
 Both files matched the criteria we were looking for while seemingly also being compatible for a merge based on movie title. 
 
-Transform: what data cleaning or transformation was required.
+<h3> Transform</h3>
 
 In respect to data cleaning, we merged our two csv files: MoviesOnStreamingPlatforms_updated.csv, and IMDB_movies.csv. 
 
@@ -45,5 +45,5 @@ merged_df = merged_df.rename(columns={'Title': 'title', 'Age':'age', 'IMDb':'IMD
 
 Lastly, the title of ‘disney +’ led to several issues throughout our transformations. We simply renamed the column ‘disney’ to serve as the title of the streaming service throughout our dataset in order to navigate this issue. 
 
-Load: the final database, tables/collections, and why this was chosen.
+<h3> Load </h3>
  
