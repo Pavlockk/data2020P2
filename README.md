@@ -43,7 +43,13 @@ The dissimilarity in lower-case/upper-case titles in regard to the newly merged 
 
 merged_df = merged_df.rename(columns={'Title': 'title', 'Age':'age', 'IMDb':'IMDb', 'Rotten Tomatoes': 'rotten tomatoes',  'Runtime': 'runtime', 'Netflix': 'netflix', 'Hulu': 'hulu', 'Prime Video': 'prime', 'Disney+': 'disney'})
 
-Lastly, the title of ‘disney +’ led to several issues throughout our transformations. We simply renamed the column ‘disney’ to serve as the title of the streaming service throughout our dataset in order to navigate this issue. 
+Lastly, the title of ‘disney +’ led to several issues throughout our transformations. We simply renamed the column ‘disney’ to serve as the title of the streaming service throughout our dataset in order to navigate this issue.
+
+Because we had quite a bit of extra time, we decided to break some of our original merged file into a number of different tables, as seen in our Jupyter Notebook. 
 
 <h3> Load </h3>
+ 
+Finally, these databases were imported into pgAdmin using SQLAlchemy. The user will need to create database in pgAdmin titled postgres for the file to run smoothly, though they can easily change the database name in our rds_connection_string variable. The user will then need to input their username and password from pgAdmin. With this done, the files should easily import into pgAdmin. Several queries have been provided for the user, but they are more than welcome to search for their favorite movie to find it on their favorite streaming platform. 
+
+The reason we chose to use the relational database PostgreSQL was it was the database we were all most familiar. 
  
